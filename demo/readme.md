@@ -24,3 +24,6 @@ To run the workflow, please make sure the following files are available:
 docker build -t xbrain:v1 .
 docker run -it --rm -p 8888:8888 -v /Users/graywr1/code/xbrain-latest:/home/jovyan/work/ xbrain:v1
 ~~~
+
+## Goal 
+https://github.com/evadyer/xbrain-py/blob/master/code/xbrain_ilastik_workflow_celldetect_vesselseg.ipynb
