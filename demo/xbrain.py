@@ -171,8 +171,8 @@ def detect_cells(cell_probability, probability_threshold, stopping_criterion,
     """
 
     # following imports to be updated when directory structure are finalized
-    from create_synth_dict import create_synth_dict
-    from compute3dvec import compute3dvec
+    #import create_synth_dict
+    #from compute3dvec import compute3dvec
     from scipy import signal
     import numpy as np
     import pdb
@@ -217,7 +217,6 @@ def detect_cells(cell_probability, probability_threshold, stopping_criterion,
 
         newtest = newtest * (x3 == 0)
         ptest = val/np.sum(dict, axis=0)
-
         if ptest < stopping_criterion:
             print("Cell Detection is done")
             return(centroids, new_map)
@@ -233,7 +232,7 @@ def detect_cells(cell_probability, probability_threshold, stopping_criterion,
         # insert a row into centroids
         centroids = np.vstack((centroids, np.append(new_centroid, ptest)))
         # for later: convert to logging and print with much less frequency
-        if(ktot % 50 == 0):
+        if(ktot % 10 == 0):
             print('Iteration remaining = ', (max_no_cells - ktot - 1), 'Correlation = ', ptest )
 
     print("Cell Detection is done")
@@ -318,7 +317,12 @@ def placeatom(vector, box_length, which_loc, stacksz):
     r, c, z = np.nonzero(output_array)
 
     #save the output of round() function to avoid multiple calls to it.
-    half_length = round(box_length/2)
+    half_length = np.int(round(box_length/2))
+
+    # TODO: casting to int to avoid problems downstream with indexing
+    c = np.int(c)
+    r = np.int(r)
+    z = np.int(z)
 
     #Save the data from the cube into output_array.
     output_array[(r - half_length +1) : (r + box_length - half_length +1), \
