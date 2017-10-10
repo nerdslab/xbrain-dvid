@@ -1,5 +1,4 @@
-xbrain demo readme
-~~~~~~~~~~~~~~~~~~
+## xbrain demo readme
 
 This demo provides a working, dockerized version of xbrain.  This is an experimental Python 3.x workflow designed to be universally accessible and reproducible using Docker.
 
