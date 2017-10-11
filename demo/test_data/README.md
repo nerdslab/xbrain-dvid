@@ -1,8 +1,10 @@
 ## Information about the test cubes
 
 Each cube is 200 images of 200x200 pixels.
+
 Every image is 40KB and the stack is 8MB.
-Each cube also come in a .nrrd file format.
+
+Each cube also come in a .nrrd, .tif, and .npy file format.
 
 The idea of the three difference crops was to get the 
 top left corner of the slices, the centers of the slices,
