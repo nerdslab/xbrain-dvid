@@ -17,9 +17,9 @@ The Tiff files have the naming conventions:
 ------------------------------------------------------------
 
 test_cube1
--- Image sequence from origional data: 1500-1699
--- Started crop at pixel: (130, 376)
--- Upper left corner
+- Image sequence from origional data: 1500-1699
+- Started crop at pixel: (130, 376)
+- Upper left corner
 
 
 test_cube2
