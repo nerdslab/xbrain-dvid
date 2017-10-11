@@ -8,8 +8,8 @@ Each cube also come in a .nrrd, .tif, and .npy file format.
 
 The idea of the three difference crops was to get the 
 top left corner of the slices, the centers of the slices,
-and the bottom right hand corner for an attempt at 
-variablility.
+and the bottom right hand corner in an attempt at 
+variability of the data.
 
 The individual .tif files have the naming conventions:
 
