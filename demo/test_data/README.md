@@ -12,8 +12,10 @@ and the bottom right hand corner for an attempt at
 variablility.
 
 The Tiff files have the naming conventions:
-    test_cubeX_0YYY.tif
-    where X if the cube number and Y is the sequence number
+
+`test_cubeX_0YYY.tif`
+
+where X if the cube number and Y is the sequence number
 
 
 ------------------------------------------------------------
