@@ -7,7 +7,7 @@ To run the workflow, please make sure the following files are available.  Please
 - ilastik classifier:  [TBD] ilastik_classifiers/<>.ilp
 - xbrain algorithms:  demo/xbrain.py
 - xbrain notebook:  demo/xbrain-demo.ipynb
-- sample input file:  demo/xbrain_test_set_2a.npy
+- sample input file:  demo/{xbrain_test_set_2a.npy, test_cubeX_full.npy}
 - Docker file:  Dockerfile
 
 ## Instructions
@@ -34,7 +34,7 @@ pip install docker
 docker build -t xbrain:v1 .
 ~~~
 
-- This will generate the docker image named 'xbrain:v1' (roughly ~4.19GB)
+- This will generate the docker image named 'xbrain:v1' with all of the dependencies needed to run the pipeline (roughly ~4.19GB)
 
 ~~~
 docker run -it --rm -p 8888:8888 -v /Users/graywr1/code/xbrain-latest:/home/jovyan/work/ xbrain:v1
