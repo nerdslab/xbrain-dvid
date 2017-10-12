@@ -1,13 +1,23 @@
-## XBrain Demo
+# XBrain Demo
 
 This demo provides a working, dockerized version of xbrain.  This is an experimental Python 3.x workflow designed to be universally accessible and reproducible using Docker.
 
-To run the workflow, please make sure the following files are available.  Please visit our shared google drive folder [ ] to retrieve ilastik classifiers and additional sample and ground truth data.
+## Download the data
 
+To run the workflow, please make sure the following files are available.  Please use the [download-data.ipynb](https://github.com/nerdslab/xbrain/blob/demo/demo/download-data.ipynb) to retrieve ilastik classifiers and additional sample and ground truth data.
+
+Files downloaded with download-data.ipynb:
+- V1_imgdata_gt.npy
+- V2_imgdata_gt.npy
+- V3_imgdata_gt.npy
+- xbrain_test_set_2a.npy
+- xbrain_vessel_seg_v7.ilp
+
+This is the list of files needed to run the [xbrain-demo.ipynb](https://github.com/nerdslab/xbrain/blob/demo/demo/xbrain-demo.ipynb) notebook:
 - ilastik classifier:  [TBD] ilastik_classifiers/<>.ilp
 - xbrain algorithms:  demo/xbrain.py
 - xbrain notebook:  demo/xbrain-demo.ipynb
-- sample input file:  demo/{xbrain_test_set_2a.npy, test_cubeX_full.npy}
+- sample input file:  demo/xbrain_test_set_2a.npy
 - Docker file:  Dockerfile
 
 ## Instructions
