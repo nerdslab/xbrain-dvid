@@ -10,7 +10,4 @@ Please direct any questions to Eva Dyer at evadyer{at}gatech{dot}edu.
 
 ### What's here... ###
 
-* __Code__: MATLAB and Python code for running various segmentation and analysis routines.
-* __Data__: Training and test volumes used to optimize and evaluate our methods.
-* __Library__: Ilastik classifier files + LONI Pipeline files used to execute our distributed workflow on full data volumes (~100 GB of raw data).
-* __Results__: Some results from running xbrain on large datasets.
+* __Demo__: Reproducible Docker image containing an ipython notebook that walks through an example on how to use XBRAIN
