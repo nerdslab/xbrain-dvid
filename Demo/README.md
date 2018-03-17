@@ -4,7 +4,7 @@ This demo provides a working, dockerized version of xbrain.  This is an experime
 
 ## Download the data
 
-To run the workflow, please make sure the following files are available.  Please use the [download-data.ipynb](https://github.com/nerdslab/xbrain/blob/master/Demo/download-data.ipynb) to retrieve ilastik classifiers and additional sample and ground truth data.
+To run the workflow, please make sure the following files are available.  You can download the ilastik classifiers and additional sample and ground truth data by either downloading the data from [DropBox](https://www.dropbox.com/s/ahnbff2pr5degmk/public_data.zip?dl=0) or by using this Python notebook [download-data.ipynb](https://github.com/nerdslab/xbrain/blob/master/Demo/download-data.ipynb). 
 
 Files downloaded with download-data.ipynb:
 - V1_imgdata_gt.npy
