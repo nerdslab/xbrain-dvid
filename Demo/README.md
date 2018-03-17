@@ -14,10 +14,10 @@ Files downloaded with download-data.ipynb:
 - xbrain_vessel_seg_v7.ilp
 
 This is the list of files needed to run the [xbrain-demo.ipynb](https://github.com/nerdslab/xbrain/blob/master/Demo/xbrain-demo.ipynb) notebook:
-- ilastik classifier:  [TBD] ilastik_classifiers/<>.ilp
+- ilastik classifier:  xbrain_vessel_seg_v7.ilp
 - xbrain algorithms:  demo/xbrain.py
 - xbrain notebook:  demo/xbrain-demo.ipynb
-- sample input file:  demo/xbrain_test_set_2a.npy
+- sample input file:  xbrain_test_set_2a.npy
 - Docker file:  Dockerfile
 
 ## Instructions
@@ -47,7 +47,7 @@ docker build -t xbrain:v1 .
 - This will generate the docker image named 'xbrain:v1' with all of the dependencies needed to run the pipeline (roughly ~4.19GB)
 
 ~~~
-docker run -it --rm -p 8888:8888 -v /Users/graywr1/code/xbrain-latest:/home/jovyan/work/ xbrain:v1
+docker run -it --rm -p 8888:8888 -v <your path here>/code/xbrain-latest:/home/jovyan/work/ xbrain:v1
 ~~~
 
 - This will create the docker container you will work in
